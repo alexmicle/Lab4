@@ -7,19 +7,27 @@ public class ReadName {
 
         int n = SkeletonJava.readIntConsole("Cate nume?");
 
-        String[] name = new String[n];
+      /*  String[] name = new String[n];
         String[] surname = new String[n];
-        int[] ziuaDeNastere = new int[n];
+        int[] ziuaDeNastere = new int[n];*/
+
+        Person[] persoane =  new Person[n];
 
         for(int i =0; i<n; i ++){
 
             int j= i+1;
-            name[i] = SkeletonJava.readStringConsole("Name" + j + "?");
-            surname[i] = SkeletonJava.readStringConsole("Surname" + j + "?");
-            ziuaDeNastere[i] = SkeletonJava.readIntConsole("Ziua de nasere?Luni=0");
+            String name = SkeletonJava.readStringConsole("Name" + j + "?");
+            String surname = SkeletonJava.readStringConsole("Surname" + j + "?");
+            int ziuaDeNastere = SkeletonJava.readIntConsole("Ziua de nasere?Luni=0");
 
-            int len = surname[i].length();
-            System.out.println(surname[i] + "+" + name[i] + " " + len + "nas" + ziuaDeNastere[i]);
+            Person person =  new Person(surname,name,ziuaDeNastere);
+          /*  person.setPrenume(surname);
+            person.setNume(name);
+            person.setZiNastere(ziuaDeNastere);*/
+            persoane[i] = person;
+
+
+            System.out.println(persoane[i].getName() + "+" + persoane[i].getPrenume() + " " + persoane[i].getName().length() + "nas" + persoane[i].getZiNastere());
 
         }
     }

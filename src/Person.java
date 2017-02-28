@@ -17,6 +17,14 @@ public class Person {
 
     }
 
+    public char getGender() {
+        return gender;
+    }
+
+    public void setGender(char gender) {
+        this.gender = gender;
+    }
+
     public String getPrenume(){
         return prenume;
     }
@@ -34,12 +42,20 @@ public class Person {
         return nume;
     }
 
+    public void setZiNastere(int ziNastere){
+        this.ziNastere = ziNastere;
+    }
+
+    public int getZiNastere(){
+        return ziNastere;
+    }
+
     public static void main(String[] args) {
 
-        Person florin = new Person();
+        /*Person florin = new Person();
         florin.setNume("Macicasan");
         florin.setPrenume("Florin");
-
+*/
     }
 
 
