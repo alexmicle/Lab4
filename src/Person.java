@@ -10,6 +10,13 @@ public class Person {
     private char gender;
     private int ziNastere;
 
+    public Person(String prenume, String nume,int x){
+        this.prenume = prenume;
+        this.nume = nume;
+        ziNastere= x;
+
+    }
+
     public String getPrenume(){
         return prenume;
     }
@@ -28,6 +35,10 @@ public class Person {
     }
 
     public static void main(String[] args) {
+
+        Person florin = new Person();
+        florin.setNume("Macicasan");
+        florin.setPrenume("Florin");
 
     }
 
