@@ -19,13 +19,6 @@ public class ReadName {
             int len = surname[i].length();
             System.out.println(surname[i] + "+" + name[i] + " " + len);
 
-
-
         }
-
-
-
-
     }
-
 }
