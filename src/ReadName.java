@@ -28,6 +28,7 @@ public class ReadName {
 
 
             System.out.println(persoane[i].getName() + "+" + persoane[i].getPrenume() + " " + persoane[i].getName().length() + "nas" + persoane[i].getZiNastere());
+            System.out.println(person.getId());
 
         }
     }

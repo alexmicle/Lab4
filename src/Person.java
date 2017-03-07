@@ -5,16 +5,23 @@ import java.util.Date;
  */
 public class Person {
 
+    static int perscreat = 0;
     private String prenume;
     private String nume;
     private char gender;
     private int ziNastere;
+    private int id;
 
     public Person(String prenume, String nume,int x){
         this.prenume = prenume;
         this.nume = nume;
         ziNastere= x;
+        perscreat ++;
+        this.id = perscreat;
+    }
 
+    public int getId() {
+        return id;
     }
 
     public char getGender() {
